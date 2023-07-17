@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D NN builder</title>
+    <style>body {
+        margin: 0;
+        overflow: hidden;
+        }
+        .btnsDiv {
+            position: absolute;
+            z-index: 1;
+        }
+        button, input, select{
+            position: relative;
+        }
+        /*Buttons*/
+        button,input,select{
+            display: inline-block;
+            outline: 0;
+            margin-top: 5px;
+            text-align: center;
+            cursor: pointer;
+            padding: 0px 10px;
+            border-radius: 2px;
+            width: 100px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(50, 50, 48);
+            font-size: 12px;
+            font-weight: 400;
+            box-sizing: border-box;
+            border: 1px solid rgb(150, 150, 150);
+        }
+        .active {
+            background-color: #FFAD8F;
+        }
+    </style>
+</head>
+<body>
+<div class="btnsDiv">
+        <input type="button" class="actionBtn" id="spawnToolBtn" value="spawn tool"></button>
+        <input id="numInp" type="number" min="1" max="10" value="1"></input>
+        <select id="typeInp">
+            <option value="input">input</option>
+            <option value="output">output</option>
+            <option value="inner">inner</option>
+            </select>
+        <br>
+        <button class="actionBtn" id="connToolBtn">conn tool</button>
+        <button class="actionBtn" id="cutToolBtn">cut tool</button>
+        <br>
+        <button class="actionBtn" id="removeToolBtn">remove tool</button>
+</div>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.ToolIcon
+{
+    height: 100px;
+}
+
+.ToolIcon:hover
+{
+    opacity: 0.5;
+}
